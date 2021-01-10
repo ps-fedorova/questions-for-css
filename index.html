@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link href="/favicon.ico" type="icon">
+  <link href="./style.css" rel="stylesheet">
+  <title>Вопросы по HTML/CSS</title>
+</head>
+
+<body>
+<h1>Вопросы по HTML/CSS</h1>
+<h2>(ответы смотри в консоли)</h2>
+<div class="info">
+  <button name="button-consoleClear" id="consoleClear">Очистить консоль</button>
+  <ul class="navigation-list"></ul>
+</div>
+
+<ol class="question-list"></ol>
+
+<template id="navigation-template">
+  <li class="navigation-item">
+    <a class="navigation-item-link"></a>
+  </li>
+</template>
+
+<template id="question-template">
+  <li class="question-item">
+    <p></p>
+    <button>ответ</button>
+  </li>
+</template>
+
+<script src="./data.js" type="module"></script>
+<script src="./index.js" type="module"></script>
+</body>
+
+</html>
